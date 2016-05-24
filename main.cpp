@@ -69,6 +69,31 @@ int main() {
     Hospital* hospital = new Hospital("Hospital APU");
     hospital->registerPatient("anais","anais","anais","22 allee de la choco", "anais@anais.fr", 20,"student");
     hospital->displayHospital();
+
+    cout << "Enters username\n";
+    string username;
+    cin >> username;
+    string pwd;
+    cout << "Enters password.\n";
+    cin >> pwd;
+    cout << "OK NOW REGISTERED, please fill informations\n";
+    cout << "Enters name\n";
+    string name;
+    cin >> name;
+    cout << "Enters address\n";
+    string address;
+    cin >> address;
+    cout << "Enters email \n";
+    string email;
+    cin >> email;
+    cout << "Enters age\n";
+    int age;
+    cin >> age;
+    cout << "Enters function\n";
+    string function;
+    cin >> function;
+    hospital->registerPatient(username, pwd, name, address, email, age, function);
+    cout << "OK Done !";
     return 0;
 
     /*  Ecole* ecole = new Ecole("Efrei");
