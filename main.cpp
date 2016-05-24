@@ -76,6 +76,8 @@ int main() {
     string pwd;
     cout << "Enters password.\n";
     cin >> pwd;
+
+    // verification dans le fichier s'il existe ou pas
     cout << "OK NOW REGISTERED, please fill informations\n";
     cout << "Enters name\n";
     string name;
@@ -93,6 +95,9 @@ int main() {
     string function;
     cin >> function;
     hospital->registerPatient(username, pwd, name, address, email, age, function);
+
+    // Enregistrement du patient dans le fichier et vérification du bon enregistrement
+
     cout << "OK Done !";
     return 0;
 
